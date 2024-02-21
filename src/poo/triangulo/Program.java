@@ -1,4 +1,4 @@
-package poo.Triangulo;
+package poo.triangulo;
 
 import java.util.Locale;
 import java.util.Scanner;

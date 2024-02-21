@@ -1,4 +1,4 @@
-package poo.Triangulo;
+package poo.triangulo;
 
 public class Triangle {
     public double a;

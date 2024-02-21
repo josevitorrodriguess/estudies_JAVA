@@ -1,4 +1,4 @@
-package poo.Produto;
+package poo.produto;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -22,20 +22,20 @@ public class ConsultProduct {
 
         double total = produto.totalValueinStock();
 
-        System.out.printf("Product data: %s, R$: %.2f, %d units, Total:%.2f%n",produto.name,produto.price,produto.quantity,total);
+        System.out.println("Product data: "+produto);
 
         System.out.println("Enter the number of products to be added in stock:");
         int add = sc.nextInt();
         produto.addProducts(add);
         total = produto.totalValueinStock();
-        System.out.printf("Update data: %s, R$: %.2f, %d units, Total:%.2f%n",produto.name,produto.price,produto.quantity,total);
+        System.out.println("Updated data: "+produto);
 
 
         System.out.println("Enter the number of products to be remove in stock:");
         int remove = sc.nextInt();
         produto.removeProducts(remove);
         total = produto.totalValueinStock();
-        System.out.printf("Update data: %s, R$: %.2f, %d units, Total:%.2f%n",produto.name,produto.price,produto.quantity,total);
+        System.out.println("Updated data: "+produto);
 
 
         sc.close();

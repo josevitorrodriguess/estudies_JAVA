@@ -1,6 +1,4 @@
-package poo.Produto;
-
-import java.util.Locale;
+package poo.produto;
 
 public class Product {
 
@@ -16,6 +14,7 @@ public class Product {
     public void addProducts(int qntToAdd){
 
         quantity += qntToAdd;
+
     }
 
     public void removeProducts(int qntToRemove){
@@ -25,6 +24,10 @@ public class Product {
             System.out.println("Not enough quantity in stock to remove.");
         }
 
+    }
+
+    public String toString(){
+        return name + ", $ "+ String.format("%.2f",price) + ", " + quantity + " units, Total: " + String.format("%.2f",totalValueinStock());
     }
 
 }
