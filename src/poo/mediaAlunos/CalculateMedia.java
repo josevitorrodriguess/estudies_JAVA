@@ -32,8 +32,7 @@ public class CalculateMedia {
             System.out.printf("FINAL GRADE: %.2f%n MISSING %.2f POINTS",media, qntFalta);
         }
 
-
-
+        sc.close();
 
     }
 }
