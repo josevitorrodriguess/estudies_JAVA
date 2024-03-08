@@ -16,5 +16,7 @@ public class LerDolar {
         CurrencyConverter.valorDolarCompra = sc.nextDouble();
 
         System.out.println("Amount to be paid in reais = " + CurrencyConverter.converterDolar());
+
+        sc.close();
     }
 }

@@ -1,5 +1,6 @@
 package poo.produto;
 
+import java.time.LocalDateTime;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -8,37 +9,38 @@ public class ConsultProduct {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Product produto = new Product();
+
 
         System.out.println("Enter product data:");
         System.out.println("Name:");
-        produto.name = sc.nextLine();
+        String name = sc.nextLine();
 
         System.out.println("Price:");
-        produto.price = sc.nextDouble();
+        double price = sc.nextDouble();
 
         System.out.println("Quantity:");
-        produto.quantity = sc.nextInt();
+        int quantity = sc.nextInt();
 
-        double total = produto.totalValueinStock();
+        Product produto = new Product(name, price, quantity);
+
 
         System.out.println("Product data: "+produto);
 
         System.out.println("Enter the number of products to be added in stock:");
         int add = sc.nextInt();
         produto.addProducts(add);
-        total = produto.totalValueinStock();
         System.out.println("Updated data: "+produto);
 
 
         System.out.println("Enter the number of products to be remove in stock:");
         int remove = sc.nextInt();
         produto.removeProducts(remove);
-        total = produto.totalValueinStock();
         System.out.println("Updated data: "+produto);
 
 
         sc.close();
+
+
 
     }
 }
