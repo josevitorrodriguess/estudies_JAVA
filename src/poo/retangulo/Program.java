@@ -11,8 +11,8 @@ public class Program {
 
         System.out.println("Informe os valores da largura e altura do retângulo:");
 
-        retangulo.width = sc.nextDouble();
-        retangulo.heigh = sc.nextDouble();
+        double width = sc.nextDouble();
+        double heigh = sc.nextDouble();
         sc.nextLine();
 
         System.out.println(retangulo.toString());

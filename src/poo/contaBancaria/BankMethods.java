@@ -8,6 +8,8 @@ public class BankMethods {
 
     protected final double tax = 5.00;
 
+
+
     public  void deposit(double quantityToDeposit){
           balance += quantityToDeposit;
     }
